@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+<div id="box">
+  <p>{{ user.name }}</p>
+  <input v-model="user.name">
+</div>
+
+<script>
+var vue = new Vue({
+  el: "#box",
+  data: {
+    user: { name: "chrischen" }
+  },
+  methods: {
+
+  }
+
+})
+
+
+</script>
+</body>
+
+</html>
