@@ -1,4 +1,4 @@
-<!-- 学习自定义组件 -->
+<!-- 学习vue生命周期的各种事件 -->
 <!DOCTYPE html>
 <html>
 
@@ -31,12 +31,22 @@ var vue = new Vue({
       ]
     }
   },
+  beforeCreate: function() {
+    console.log('brforeCreate result:' + this.result)
+  },
+  created: function() {
+    console.log('created result:' + this.result)
+  },
+  mounted: function() {
+    console.log('mounted result:' + this.result)
+  },
   methods: {
 
   }
 
 })
 
+console.log('可以看到在beforeCreate的时候result为undefined')
 
 </script>
 </body>
