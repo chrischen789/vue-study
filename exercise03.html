@@ -1,0 +1,39 @@
+<!-- 学习自定义组件 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+<div id="box">
+  <ul>
+    <cc-item></cc-item>
+    <cc-item></cc-item>
+    <cc-item></cc-item>
+  </ul>
+</div>
+
+<script>
+
+  Vue.component('cc-item', {
+    template: '<li>it\'s an item</li>'
+  })
+
+var vue = new Vue({
+  el: "#box",
+  data: {
+    user: { name: "chrischen" }
+  },
+  methods: {
+
+  }
+
+})
+
+
+</script>
+</body>
+
+</html>
